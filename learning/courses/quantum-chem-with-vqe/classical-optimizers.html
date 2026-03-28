@@ -14,7 +14,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.eb9706c8.css">
-<script src="/assets/js/runtime~main.8fbfeed0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.66f13889.js" defer="defer"></script>
 <script src="/assets/js/main.fac035a7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -27,8 +27,8 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-an-optimizer">מה זה אופטימיזטור?<a href="#what-is-an-optimizer" class="hash-link" aria-label="קישור ישיר ל-מה זה אופטימיזטור?" title="קישור ישיר ל-מה זה אופטימיזטור?" translate="no">​</a></h2>
 <p>ויקטוריה ליפינסקה מסבירה לנו על אופטימיזטורים קלאסיים וכיצד הם פועלים כחלק מ-VQE.</p>
 <p>תשמעו על כמה אופטימיזטורים לדוגמה וכיצד הם מתפקדים עם רעש ובלעדיו.</p>
-<div style="margin:1rem 0"><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px"><iframe src="https://video.ibm.com/embed/recorded/132414916" title="ויקטוריה ליפינסקה מסבירה את השימוש באופטימיזטורים קלאסיים ב-VQE. בפרט, היא מכסה מגבלות כמו טיפול ברעש ומה שנקרא ״מישורים עקרים״." style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">מקורות<a href="#references" class="hash-link" aria-label="קישור ישיר ל-מקורות" title="קישור ישיר ל-מקורות" translate="no">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">מקורות<a href="#references" class="hash-link" aria-label="קישור ישיר ל-מקורות" title="קישור ישיר ל-מקורות" translate="no"> ​</a></h3>
 <p>המאמרים הבאים מוזכרים בסרטון למעלה.</p>
 <ul>
 <li class=""><a href="https://arxiv.org/pdf/2106.08682.pdf" target="_blank" rel="noopener noreferrer" class="">A Comparison of Various Classical Optimizers for a Variational Quantum Linear Solver, Pellow-Jarman, et al.</a></li>
@@ -39,7 +39,7 @@
 <li class=""><a href="https://arxiv.org/pdf/2011.12245.pdf" target="_blank" rel="noopener noreferrer" class="">Effect of barren plateaus on gradient-free optimization, Arrasmith, et al.</a></li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="coding-a-classical-optimizer">קידוד אופטימיזטור קלאסי<a href="#coding-a-classical-optimizer" class="hash-link" aria-label="קישור ישיר ל-קידוד אופטימיזטור קלאסי" title="קישור ישיר ל-קידוד אופטימיזטור קלאסי" translate="no">​</a></h2>
-<p>בשיעורים הקודמים למדתם איך לבנות המילטוניאן המתאים לשימוש במחשב קוונטי וכיצד ליצור מעגל וריאציוני. למדתם גם שהמעגל הוריאציוני (או ה-ansatz) מכיל פרמטרים שיש לשנות, והבחירה האופטימלית של הפרמטרים היא זו שמניבה את פונקציית העלות או האנרגיה הנמוכה ביותר האפשרית. לכן, הבעיה שלנו מצטמצמת לחיפוש במרחב הפרמטרים אחרי הקבוצה האופטימלית. רוב העבודה על אופטימיזטורים קלאסיים כבר נעשתה עבורנו, שכן אופטימיזטורים מצוינים זמינים ממספר מקורות.</p>
+<p>בשיעורים הקודמים למדתם איך לבנות המילטוניאן המתאים לשימוש במחשב קוונטי וכיצד ליצור מעגל וריאציוני. למדתם גם שהמעגל הוריאציוני (או ה-ansatz) מכיל פרמטרים שיש לשנות, והבחירה האופטימלית של ה פרמטרים היא זו שמניבה את פונקציית העלות או האנרגיה הנמוכה ביותר האפשרית. לכן, הבעיה שלנו מצטמצמת לחיפוש במרחב הפרמטרים אחרי הקבוצה האופטימלית. רוב העבודה על אופטימיזטורים קלאסיים כבר נעשתה עבורנו, שכן אופטימיזטורים מצוינים זמינים ממספר מקורות.</p>
 <p>בשיעור זה תלמדו:</p>
 <ul>
 <li class="">כיצד אופטימיזטורים קלאסיים משתלבים בחישוב VQE</li>
@@ -59,7 +59,7 @@ This minimize function has several arguments, but the most relevant arguments fo
 </ul>
 <p>Some example code is shown below. We restrict our discussion here to the last two arguments.</p>
 <div class="language-minimize( codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-minimize( codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">    cost_func,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    x0,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    args=(ansatz, hamiltonian, estimator),</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    method=&quot;cobyla&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    options={&quot;maxiter&quot;: 200})</span><br></span></code></pre></div></div>
-<p>ל-SciPy יש תיעוד ע ל כל שיטות minimize הזמינות. הנה כמה דוגמאות בולטות, כולן שיטות לצמצום פונקציה סקלרית של משתנה אחד או יותר:</p>
+<p>ל-SciPy יש תיעוד על כל שיטות minimize הזמינות. הנה כמה דוגמאות בולטות, כולן שיטות לצמצום פונקציה סקלרית של משתנה אחד או יותר:</p>
 <ul>
 <li class=""><a href="https://docs.scipy.org/doc/scipy/reference/optimize.minimize-cobyla.html#optimize-minimize-cobyla" target="_blank" rel="noopener noreferrer" class="">cobyla</a>: אלגוריתם Optimization BY Linear Approximation (COBYLA).</li>
 <li class=""><a href="https://docs.scipy.org/doc/scipy/reference/optimize.minimize-slsqp.html#optimize-minimize-slsqp" target="_blank" rel="noopener noreferrer" class="">slsqp</a>: Sequential Least Squares Programming (SLSQP).</li>
