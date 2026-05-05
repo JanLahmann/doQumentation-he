@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.9ec1b93f.css">
-<script src="/assets/js/runtime~main.d0528e49.js" defer="defer"></script>
-<script src="/assets/js/main.2a2028ba.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.76b5e23f.js" defer="defer"></script>
+<script src="/assets/js/main.9f802581.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -26,8 +26,11 @@
 <!-- -->
 <!-- -->
 <p>לפני שמתחילים, אנא מלאו את <a href="https://your.feedback.ibm.com/jfe/form/SV_a64TTfW8cUM9Mc6" target="_blank" rel="noopener noreferrer" class="">סקר טרום-הקורס הקצר הזה</a>, שחשוב לשיפור תוכן הקורסים וחוויית המשתמש שלנו.</p>
+<blockquote>
+<p><strong>Note:</strong> This survey is provided by IBM Quantum and relates to the original English content. To give feedback on doQumentation&#x27;s website, translations, or code execution, please <a href="https://github.com/JanLahmann/doQumentation/issues" target="_blank" rel="noopener noreferrer" class="">open a GitHub issue</a>.</p>
+</blockquote>
 <p>בקורס &quot;יסודות המידע הקוונטי&quot; דנו במסגרת לתיאור מידע קוונטי שבה מצבים קוונטיים מיוצגים על-ידי וקטורי מצב קוונטיים, פעולות מיוצגות על-ידי מטריצות יוניטריות, וכן הלאה.
-לאחר מכן השתמשנו במסגרת זו בקורס &quot;יסודות האלגוריתמים הקוונטיים&quot; לתיאור ולניתוח אלגוריתמים קוונטיים.</p>
+לאחר מכן השתמשנו במסגרת זו בקורס &quot;יסוד ות האלגוריתמים הקוונטיים&quot; לתיאור ולניתוח אלגוריתמים קוונטיים.</p>
 <p>למעשה, ישנן שתי תיאורים מתמטיים נפוצים של מידע קוונטי, כאשר זה שהוצג ב&quot;יסודות המידע הקוונטי&quot; הוא הפשוט מבין השניים. לכן נכנה אותו <em>הניסוח הפשטני של המידע הקוונטי.</em></p>
 <p>בשיעור זה נתחיל לחקור את התיאור השני, שהוא <em>הניסוח הכללי של המידע הקוונטי.</em>
 הוא, כמובן, עקבי עם הניסוח הפשטני, אך מציע יתרונות ראויים לציון.
@@ -39,7 +42,7 @@
 <p>מטריצות צפיפות יכולות לייצג מחלקה רחבה יותר של מצבים קוונטיים מאשר וקטורי מצב קוונטיים. זה כולל מצבים המתעוררים בהקשרים מעשיים, כגון מצבים של מערכות קוונטיות שנחשפו לרעש, וכן בחירות אקראיות של מצבים קוונטיים.</p>
 </li>
 <li class="">
-<p>מטריצות צפיפות מאפשרות לנו לתאר מצבים של חלקים מבודדים של מערכות, כגון מצבו של מערכת אחת שמסתבר שהיא שזורה עם מערכת אחרת שאנו רוצים להתעלם ממנה. הדבר אינו קל לביצוע בניסוח הפשטני של המידע הקוונטי.</p>
+<p>מטריצות צפיפות מאפשרות לנו לתאר מצבים של חלקים מבודדים של מערכות, כגון  מצבו של מערכת אחת שמסתבר שהיא שזורה עם מערכת אחרת שאנו רוצים להתעלם ממנה. הדבר אינו קל לביצוע בניסוח הפשטני של המידע הקוונטי.</p>
 </li>
 <li class="">
 <p>מצבים קלאסיים (הסתברותיים) יכולים גם הם להיות מיוצגים על-ידי מטריצות צפיפות, ספציפית אלו שהן <abbr title="מטריצה ריבועית היא אלכסונית כאשר כל הרשומות מחוץ לאלכסון שלה הן אפס." style="text-decoration:underline dotted;text-underline-offset:2px;cursor:help">אלכסוניות.</abbr> זה חשוב מכיוון שהוא מאפשר לתאר מידע קוונטי וקלאסי יחד במסגרת מתמטית אחת, כאשר מידע קלאסי הוא בעצם מקרה מיוחד של מידע קוונטי.</p>
