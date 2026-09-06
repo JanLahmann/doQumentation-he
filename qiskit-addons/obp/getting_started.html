@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e0d2eccc.css">
-<script src="/assets/js/runtime~main.ec6c2755.js" defer="defer"></script>
-<script src="/assets/js/main.ddfccea3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9311edca.js" defer="defer"></script>
+<script src="/assets/js/main.3450c719.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/qiskit-addons/obp/getting_started" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -29,27 +29,37 @@
 <p>דרך אחת לאפשר הפצה לאחור עמוקה יותר לתוך המעגל, תוך מניעת גדילה יתרה של האופרטור, היא לקצץ איברים עם מקדמים קטנים במקום להוסיף אותם לאופרטור. קיצוץ איברים עשוי להביא למספר קטן יותר של מעגלים קוונטיים לביצוע, אך הדבר גורם לשגיאה מסוימת בחישוב ערך הציפייה הסופי, שהיא פרופורציונלית לגודל המקדמים של האיברים שנוקצצו.
 במדריך זה נממש <a href="https://quantum.cloud.ibm.com/docs/guides/serverless#qiskit-patterns-with-quantum-serverless" target="_blank" rel="noopener noreferrer" class="">דפוס Qiskit</a> לסימולציית הדינמיקה הקוונטית של שרשרת ספין הייזנברג באמצעות הפצה לאחור של אופרטורים:</p>
 <ul>
-<li class=""><strong>שלב 1: מיפוי לבעיה קוונטית</strong>
+<li class="">
+<p><strong>שלב 1: מיפוי לבעיה קוונטית</strong></p>
 <ul>
 <li class="">מיפוי ההמילטוניאן המתפתח עם הזמן למעגל קוונטי</li>
 </ul>
 </li>
-<li class=""><strong>שלב 2: אופטימיזציה של הבעיה</strong>
+<li class="">
+<p><strong>שלב 2: אופטימיזציה של הבעיה</strong></p>
 <ul>
-<li class="">פילוח המעגל</li>
+<li class="">
+<p>פילוח המעגל</p>
+</li>
 <li class="">
 <font color="#0F62FE">הפצה לאחור של פרוסות מהמעגל אל אובייקט Observable של פאולי</font>
 </li>
-<li class="">שילוב הפרוסות הנותרות למעגל בודד</li>
-<li class="">Transpile של המעגל עבור ה-Backend</li>
+<li class="">
+<p>שילוב הפרוסות הנותרות למעגל בודד</p>
+</li>
+<li class="">
+<p>Transpile של המעגל עבור ה-Backend</p>
+</li>
 </ul>
 </li>
-<li class=""><strong>שלב 3: ביצוע ניסויים</strong>
+<li class="">
+<p><strong>שלב 3: ביצוע ניסויים</strong></p>
 <ul>
 <li class="">חישוב ערך הציפייה באמצעות המעגל המצומצם וה-observable המורחב עם <a href="https://quantum.cloud.ibm.com/docs/api/qiskit/qiskit.primitives.StatevectorEstimator" target="_blank" rel="noopener noreferrer" class="">StatevectorEstimator</a> לצורך פשטות במחברת זו</li>
 </ul>
 </li>
-<li class=""><strong>שלב 4: שחזור תוצאות</strong>
+<li class="">
+<p><strong>שלב 4: שחזור תוצאות</strong></p>
 <ul>
 <li class="">לא רלוונטי.</li>
 </ul>
@@ -124,6 +134,7 @@ circuit.draw(&quot;mpl&quot;, style=&quot;iqp&quot;, scale=0.6)
 ![Quantum circuit diagram](/img/qiskit-addons/obp/01-getting-started/output_2.png)
 
 ## שלב 2: אופטימיזציה של הבעיה \{#step-2-optimize-the-problem}
+
 ### יצירת פרוסות מעגל להפצה לאחור \{#create-circuit-slices-to-backpropagate}
 
 זכור שהפונקציה ``backpropagate`` מפיצה לאחור פרוסות שלמות בכל פעם, ולכן הבחירה כיצד לפרוס יכולה להשפיע על ביצועי ההפצה לאחור עבור בעיה נתונה. כאן, נקבץ Gate-ים מאותו סוג לפרוסות באמצעות הפונקציה [slice_by_gate_types](https://qiskit.github.io/qiskit-addon-utils/stubs/qiskit_addon_utils.slicing.slice_by_gate_types.html).
@@ -266,13 +277,14 @@ bp_obs_trunc_isa = bp_obs_trunc.apply_layout(bp_circuit_trunc_isa.layout)
 ```
 
 ## שלב 3: ביצוע ניסויים קוונטיים \{#step-3-execute-quantum-experiments}
+
 ### חישוב ערך הציפייה \{#calculate-expectation-value}
 
 לבסוף, נוכל להריץ את הניסויים עם ההפצה לאחור ולהשוות אותם לניסוי המלא באמצעות ה-[StatevectorEstimator](https://quantum.cloud.ibm.com/docs/api/qiskit/qiskit.primitives.StatevectorEstimator) חסר הרעש. נוכל לראות שערך הציפייה עם ההפצה לאחור ללא קיצוץ שקול לערך המדויק בגבולות הדיוק הנומרי.
 
 ערך הציפייה על האופרטור עם איברים מקוצצים מכיל שגיאה בסדר גודל של ``1e-4``, שנמצאת בתוך הסבילות הצפויה.
 
-**הערה:** אנחנו משתמשים ב-Estimator‏ Primitive מבוסס statevector להמחשת השפעת הקיצוץ על הפלט. להרצה על ה-Backend שאליו בוצע Transpile לניסויים בשלב 2, יש לייבא את [EstimatorV2](https://quantum.cloud.ibm.com/docs/api/qiskit-ibm-runtime/estimator-v2) מ-``qiskit-ibm-runtime`` ולהעביר את מופע ה-Backend לבנאי.
+**הערה:** אנחנו משתמשים ב-``Estimator`` primitive מבוסס וקטור-מצב כדי להמחיש את ההשפעה של קיטום על הפלט. כדי להריץ על ה-Backend שאליו בוצעה טרנספילציה של הניסויים בשלב 2, יש לייבא את [EstimatorV2](https://quantum.cloud.ibm.com/docs/api/qiskit-ibm-runtime/estimator-v2) מ-``qiskit-ibm-runtime`` ולהעביר את מופע ה-Backend לבנאי.
 
 ```python
 from qiskit.primitives import StatevectorEstimator as Estimator

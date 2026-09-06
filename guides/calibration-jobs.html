@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e0d2eccc.css">
-<script src="/assets/js/runtime~main.ec6c2755.js" defer="defer"></script>
-<script src="/assets/js/main.ddfccea3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9311edca.js" defer="defer"></script>
+<script src="/assets/js/main.3450c719.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/calibration-jobs" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -28,51 +28,81 @@
 <p>כדי להבטיח ביצועים עקביים, מחשבים קוונטיים של IBM® מנוטרים לעיתים קרובות כדי לעקוב אחר פרמטרים שעלולים לסחוף עם הזמן, להפעיל כיולים בעת הצורך, ולבצע בנצ&#x27;מארקינג יומי. דף זה מפרט שלושה תהליכים — ניטור, כיול ובנצ&#x27;מארקינג — הפועלים יחד כדי להבטיח שצי המחשבים הקוונטיים של IBM יישאר יציב, צפוי וזמין למשתמשים ככל האפשר.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="monitoring">ניטור<a href="#monitoring" class="hash-link" aria-label="קישור ישיר ל-ניטור" title="קישור ישיר ל-ניטור" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-monitoring">ניטור פרמטרים<a href="#parameter-monitoring" class="hash-link" aria-label="קישור ישיר ל-ניטור פרמטרים" title="קישור ישיר ל-ניטור פרמטרים" translate="no">​</a></h3>
-<p>עבודות ניטור פרמטרים קצרות מתבצעות בערך פעם בשעה, באופן אוטומטי משולבות בין עבודות משתמשים, תוך שימוש במחסנית התוכנה המלאה של Qiskit Runtime. התוצאות של עבודות אלו מנותחות כדי לבדוק האם פרמטרים כלשהם החלו לסטות מהטווחים המקובלים, מתוך מטרה לתפוס בעיות לפני שהן הופכות משמעותיות מספיק כדי להשפיע על הביצועים ברמה ניכרת.</p>
+<p>עבודות ניטור פרמטרים קצרות מתבצעות בערך פעם בשעה, באופן אוטומטי משולבות בין עבודות משתמשים, תוך שימוש במחסנית התוכנה המלאה של IBM Quantum Compute Service. התוצאות של עבודות אלו מנותחות כדי לבדוק האם פרמטרים כלשהם החלו לסטות מהטווחים המקובלים, מתוך מטרה לתפוס בעיות לפני שהן הופכות משמעותיות מספיק כדי להשפיע על הביצועים ברמה ניכרת.</p>
 <p>חלק מהפרמטרים המנוטרים כוללים את הבאים:</p>
 <ul>
-<li class="">זוויות, אמפליטודות וסף מפלה של קריאה, המבטיחים אבחנת מצבים מדויקת, דליפה נמוכה ופעולה יציבה. זה כולל את הפרמטרים התפעוליים של המגברים בעלי ההגבלה הקוונטית שלנו.</li>
-<li class="">פעולות שערי קיוביט יחיד ושני קיוביטים, המאשרות שהם מתנהגים כמצופה כדי לשמור על זוויות סיבוב נכונות ולמזער שגיאות פאזה ואמפליטודה.</li>
-<li class="">חתימות של פעילות TLS.</li>
+<li class="">
+<p>זוויות, אמפליטודות וסף מפלה של קריאה, המבטיחים אבחנת מצבים מדויקת, דליפה נמוכה ופעולה יציבה. זה כולל את הפרמטרים התפעוליים של המגברים בעלי ההגבלה הקוונטית שלנו.</p>
+</li>
+<li class="">
+<p>פעולות שערי קיוביט יחיד ושני קיוביטים, המאשרות שהם מתנהגים כמצופה כדי לשמור על זוויות סיבוב נכונות ולמזער שגיאות פאזה ואמפליטודה.</p>
+</li>
+<li class="">
+<p>חתימות של פעילות TLS.</p>
+</li>
 </ul>
 <p>אם תוצאות עבודות הניטור הללו מצביעות על סטיות מתונות מביצועיהם הצפויים, אז עבודות כיול מתאימות מופעלות. אם מזוהה פעילות TLS חמורה, ייתכן שאסטרטגיית הכיול עבור שערים הקשורים לקיוביטים המושפעים תשתנה באופן אוטומטי (ועלולה לכלול השהיית כיולים) עד שפעילות ה-TLS הזו תרד חזרה לרמות מקובלות.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="holistic-monitoring">ניטור הוליסטי<a href="#holistic-monitoring" class="hash-link" aria-label="קישור ישיר ל-ניטור הוליסטי" title="קישור ישיר ל-ניטור הוליסטי" translate="no">​</a></h3>
-<p>בנוסף לעבודות המנטרות פרמטרים בודדים, ישנן עבודות המנטרות את ביצועי המחשב הקוונטי באופן הוליסטי יותר, כגון בדיקות הבוחנות את הנאמנות של מצבי Bell שנוצרו, כמו גם בדיקות של שערים שבריריים ומעגלים דינמיים על מחשבים קוונטיים התומכים בתכונות אלו. המטרה של בדיקות אלו, המתבצעות גם הן דרך מחסנית Qiskit Runtime המלאה משולבות עם עבודות משתמשים, היא לאמת ביעילות את ההתנהגות הכוללת של החומרה והתוכנה. אם בדיקות אלו מזהות ירידה משמעותית בביצועים, המחשב הקוונטי יפסיק אוטומטית את תור העבודות עד שהבעיה תיפתר, ובכך יבטיח שעבודות משתמשים לא יפעלו עד שהמכשיר יחזור לביצועיו הצפויים.</p>
+<p>בנוסף לעבודות המנטרות פרמטרים בודדים, ישנן עבודות המנטרות את ביצועי המחשב הקוונטי באופן הוליסטי יותר, כגון בדיקות הבוחנות את הנאמנות של מצבי Bell שנוצרו, כמו גם בדיקות של שערים שבריריים ומעגלים דינמיים על מחשבים קוונטיים התומכים בתכונות אלו. המטרה של בדיקות אלו, המתבצעות גם הן דרך מחסנית Quantum Compute המלאה משולבות עם עבודות משתמשים, היא לאמת ביעילות את ההתנהגות הכוללת של החומרה והתוכנה. אם בדיקות אלו מזהות ירידה משמעותית בביצועים, המחשב הקוונטי יפסיק אוטומטית את תור העבודות עד שהבעיה תיפתר, ובכך יבטיח שעבודות משתמשים לא יפעלו עד שהמכשיר יחזור לביצועיו הצפויים.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="calibrating">כיול<a href="#calibrating" class="hash-link" aria-label="קישור ישיר ל-כיול" title="קישור ישיר ל-כיול" translate="no">​</a></h2>
 <p>כיולים מופעלים בכל פעם שעבודות ניטור מצביעות על כך שפרמטרים כגון אמפליטודות פולסים או זוויות סטו מערכיהם האידיאליים. הם פועלים לאורך היום בין עבודות משתמשים, ולכן אין פרק זמן קבוע שבו כיולים מתחילים ומסתיימים. אלה פועלים רק על הקיוביטים/שערים שעבורם ניטור הפרמטרים זיהה בעיות ספציפיות, יחד עם כל קיוביט הנדרש לפעול בו-זמנית לפי כללי אצוות ספציפיים. ב-QPU מסוג Heron, זמן הכיול הכולל הוא בדרך כלל פחות משעתיים ביום.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="single-qubit-operations">פעולות קיוביט יחיד<a href="#single-qubit-operations" class="hash-link" aria-label="קישור ישיר ל-פעולות קיוביט יחיד" title="קישור ישיר ל-פעולות קיוביט יחיד" translate="no">​</a></h3>
 <p>כיולים אלה מבטיחים יישום מדויק של שערי הקיוביט היחיד: sx, x, rx (שברי). אנחנו מכוונים:</p>
 <ul>
-<li class="">תדרי קיוביטים</li>
-<li class="">אמפליטודות ופאזות של פולסים</li>
+<li class="">
+<p>תדרי קיוביטים</p>
+</li>
+<li class="">
+<p>אמפליטודות ופאזות של פולסים</p>
+</li>
 </ul>
 <p>כיולים אלה מאוגדים על פני הקיוביטים המושפעים ומבוצעים במקביל במידת האפשר, עם אסטרטגיות אצוות המותאמות לכל סוג כיול.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-qubit-operations">פעולות שני קיוביטים<a href="#two-qubit-operations" class="hash-link" aria-label="קישור ישיר ל-פעולות שני קיוביטים" title="קישור ישיר ל-פעולות שני קיוביטים" translate="no">​</a></h3>
 <ul>
-<li class="">אמפליטודות ופאזות של שערי CZ ו-RZZ (עבור מעבדי Heron ו-Nighthawk)</li>
-<li class="">אמפליטודות ופאזות של שערי ECR (עבור מעבדי Eagle)</li>
+<li class="">
+<p>אמפליטודות ופאזות של שערי CZ ו-RZZ (עבור מעבדי Heron ו-Nighthawk)</p>
+</li>
+<li class="">
+<p>אמפליטודות ופאזות של שערי ECR (עבור מעבדי Eagle)</p>
+</li>
 </ul>
 <p>כיולים אלה מופעלים במנות של קיוביטים שאינם שכנים ישירים כדי למזער קרוסטוק.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="readout">קריאה<a href="#readout" class="hash-link" aria-label="קישור ישיר ל-קריאה" title="קישור ישיר ל-קריאה" translate="no">​</a></h3>
 <ul>
-<li class="">זוויות פולסי קריאה</li>
-<li class="">פרמטרי הבחנת מדידה</li>
+<li class="">
+<p>זוויות פולסי קריאה</p>
+</li>
+<li class="">
+<p>פרמטרי הבחנת מדידה</p>
+</li>
 </ul>
 <p>כיולים אלה מופעלים בו-זמנית על קיוביטים הדורשים כיול.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-calibrations-are-scheduled">כיצד מתוזמנים כיולים<a href="#how-calibrations-are-scheduled" class="hash-link" aria-label="קישור ישיר ל-כיצד מתוזמנים כיולים" title="קישור ישיר ל-כיצד מתוזמנים כיולים" translate="no">​</a></h3>
 <ul>
-<li class="">עבודת כיול לא יכולה לפעול בו-זמנית עם עבודה או session פעילים.</li>
-<li class="">לכן, במהלך sessions ארוכים, המחשב הקוונטי עלול לחוות יציבות אפקטיבית מופחתת עקב כיול מחדש מעוכב או לא תכוף.</li>
-<li class="">שתי עבודות שהוגשו בו-זמנית עלולות לפעול תחת קבוצות כיול שונות, בהתאם לתזמון.</li>
+<li class="">
+<p>עבודת כיול לא יכולה לפעול בו-זמנית עם עבודה או session פעילים.</p>
+</li>
+<li class="">
+<p>לכן, במהלך sessions ארוכים, המחשב הקוונטי עלול לחוות יציבות אפקטיבית מופחתת עקב כיול מחדש מעוכב או לא תכוף.</p>
+</li>
+<li class="">
+<p>שתי עבודות שהוגשו בו-זמנית עלולות לפעול תחת קבוצות כיול שונות, בהתאם לתזמון.</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="benchmarking">בנצ&#x27;מארקינג<a href="#benchmarking" class="hash-link" aria-label="קישור ישיר ל-בנצ&#x27;מארקינג" title="קישור ישיר ל-בנצ&#x27;מארקינג" translate="no">​</a></h2>
 <p>בנצ&#x27;מארקינג יומי מעניק תמונה מקיפה של ביצועי המחשב הקוונטי ומייצר את המדדים הנשלחים למשתמשים דרך Qiskit. הם עוזרים למשתמשים לבחור קיוביטים, לאופטימיזציה של קומפילציות, ולצפות טוב יותר בביצועי המעגל הצפויים. ניתן לצפות במספרים המדווחים באופן תוכנתי או בדף <a href="https://quantum.cloud.ibm.com/computers" target="_blank" rel="noopener noreferrer" class="">משאבי חישוב</a> (לחץ על כל QPU כדי לפתוח את כרטיס המידע המפורט שלו). מצא פרטים נוספים על כל מדד ב<a class="" href="/guides/qpu-information">תיעוד</a>.</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>סחיפת מכשיר</div><div class="admonitionContent_BuS1"><p>ההשפעה של סחיפת מכשיר (ביצועי חומרה המתדרדרים עם הזמן) תלויה בגורמים רבים, כגון מתי בוצעו כיולים לאחרונה, הניסוי הספציפי שבוצע, פעילויות TLS כלשהן, וכן הלאה. אם עומס עבודה מסוים רגיש מאוד לערכי שגיאות פרמטרי מכשיר, ניתן לבצע בנצ&#x27;מארקינג פרמטרים של מכשיר בזמן אמת על ידי ביצוע <a class="" href="/tutorials/real-time-benchmarking-for-qubit-selection">מדריך זה</a> ב-IBM Quantum Learning.</p></div></div>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="single-qubit-performance">ביצועי קיוביט יחיד<a href="#single-qubit-performance" class="hash-link" aria-label="קישור ישיר ל-ביצועי קיוביט יחיד" title="קישור ישיר ל-ביצועי קיוביט יחיד" translate="no">​</a></h3>
 <ul>
-<li class=""><a class="" href="/guides/qpu-information#median-sx-error">בנצ&#x27;מארקינג אקראי</a> (RB) בקבוצות מאוגדות</li>
-<li class="">זמני קוהרנטיות עבור <a class="" href="/guides/qpu-information#t1"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">T_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a> ו-<a class="" href="/guides/qpu-information#t2"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">T_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a></li>
-<li class=""><a class="" href="/guides/qpu-information#median-readout-error">מדדי נאמנות מדידה</a></li>
+<li class="">
+<p><a class="" href="/guides/qpu-information#median-sx-error">בנצ&#x27;מארקינג אקראי</a> (RB) בקבוצות מאוגדות</p>
+</li>
+<li class="">
+<p>זמני קוהרנטיות עבור <a class="" href="/guides/qpu-information#t1"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">T_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a> ו-<a class="" href="/guides/qpu-information#t2"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">T_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a></p>
+</li>
+<li class="">
+<p><a class="" href="/guides/qpu-information#median-readout-error">מדדי נאמנות מדידה</a></p>
+</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-qubit-performance">ביצועי שני קיוביטים<a href="#two-qubit-performance" class="hash-link" aria-label="קישור ישיר ל-ביצועי שני קיוביטים" title="קישור ישיר ל-ביצועי שני קיוביטים" translate="no">​</a></h3>
 <ul>
