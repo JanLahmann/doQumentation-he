@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.78445676.css">
-<script src="/assets/js/runtime~main.2003b98f.js" defer="defer"></script>
-<script src="/assets/js/main.5174d0de.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5156e0b4.js" defer="defer"></script>
+<script src="/assets/js/main.91dacf4d.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/learning/courses/quantum-computing-in-practice/introduction" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -47,7 +47,7 @@
 <p>סימולטורים קלאסיים — כלומר תוכנות מחשב שפועלות על מחשבים קלאסיים ומדמות מערכות פיזיקליות — יכולים לעשות תחזיות על מערכות מכניקה קוונטית.
 אך סימולטורים קלאסיים אינם קוונטיים ואינם יכולים לחקות ישירות מערכות קוונטיות.
 במקום זאת, הם משתמשים בחישובים מתמטיים כדי לקרב התנהגות קוונטית.
-ככל שגדלים המערכות המדומות, ה-overhead הנדרש לכך גדל באופן דרמטי, ומציב מגבלות על אילו מערכות קוונטיות ניתן לדמות קלאסית, כמה זמן הסימולציות דורשות ודיוק התוצאות.</p>
+ככל שגודל המערכות המדומות גדל, ה-overhead הנדרש לכך גדל באופן דרמטי, ומציב מגבלות על אילו מערכות קוונטיות ניתן לדמות קלאסית, כמה זמן הסימולציות דורשות ודיוק התוצאות.</p>
 <p>מחשבים קוונטיים, לעומת זאת, יכולים לחקות מערכות קוונטיות באופן ישיר יותר — וכתוצאה מכך ה-overhead שהם דורשים מתרחב בצורה משמעותית יותר טובה ככל שגודל המערכת גדל.
 זה, למעשה, היה הרעיון של Richard Feynman בשנות ה-80 שהניע לראשונה חקירה של הפוטנציאל של מחשבים קוונטיים.
 עוד נאמר על כך בהמשך!</p>
@@ -88,32 +88,32 @@
 <p>מאז ומעולם, אנחנו כבני אדם נדרשנו לבצע <em>חישובים</em> — או במילים אחרות, לעבד מידע לפי כללים ואילוצים מסוימים — כדי לאפשר תקשורת, בנייה, מסחר, מדע והיבטים אחרים של חיינו.
 פנינו לעולם הפיזי לעזרה, ודרך תגליות גאוניות בנינו מכשירים שיעזרו לנו לחשב.</p>
 <p>לפני זמן רב, מכשירים עשויים מעץ, עצם וחבלים קשורים אחסנו מידע ואפשרו חישובים.
-מכשירים מכניים שנבנו מוולאים, גלגלי שיניים ומכונות אחרות התקדמו משעוני אסטרונומיה מוקדמים, למחשבונים, ועד למכשירי מחשוב מתוחכמים כמו מנתחי דיפרנציאל שפתרו משוואות באמצעות גלגלים ודיסקיות מסתובבות.
+מכשירים מכניים שנבנו ממנופים, גלגלי שיניים ומכונות אחרות התקדמו משעוני אסטרונומיה מוקדמים, למחשבונים, ועד למכשירי מחשוב מתוחכמים כמו מנתחי דיפרנציאל שפתרו משוואות באמצעות גלגלים ודיסקיות מסתובבות.
 אפילו טכנולוגיית הכתיבה מילאה תפקיד חשוב בסיפור הזה בכך שאיפשרה ל<em>אנשים</em> לבצע חישובים שלא היו מסוגלים אחרת.</p>
 <p>כשאנחנו חושבים על מחשבים היום, נוטים לחשוב על מחשבים דיגיטליים אלקטרוניים.
 אך זוהי למעשה טכנולוגיה חדשה למדי: מחשבים דיגיטליים אלקטרוניים נבנו לראשונה בשנות ה-40.
-(לשם השוואה, האבקוס השומרי האמין כי הומצא בין 2700 ל-2300 לפנה&quot;ס.)
+(לשם השוואה, מקובל להניח שהאבקוס השומרי הומצא אי-שם בין 2700 ל-2300 לפנה&quot;ס.)
 הטכנולוגיה התקדמה באופן דרמטי מאז, ומחשבים הם כיום נפוצים.
 הם נמצאים בבתים, במקומות עבודה, ובכלי הרכב שמסיעים אותנו ביניהם, ורבים מאיתנו נושאים אותם לכל מקום.</p>
-<p>יש לנו גם <em>על-מחשבים</em>, שהם אוספים גדולים של מעבדים קלאסיים עוצמתיים המחוברים במקביל.
+<p>יש לנו גם <em>סופר-מחשבים</em>, שהם אוספים גדולים של מעבדים קלאסיים עוצמתיים המחוברים במקביל.
 הם בין הכלים הטובים ביותר שהאנושות אי פעם בנתה לפתרון בעיות קשות, וכוחם ואמינותם ממשיכים להתקדם.
 אך עדיין, ישנן בעיות מחשוב חשובות שאפילו ענקיות אלה לא יוכלו לפתור לעולם, בשל הקושי המחשובי הטבעי של בעיות אלה.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="connections-to-the-physical-world">קשרים לעולם הפיזי<a href="#connections-to-the-physical-world" class="hash-link" aria-label="קישור ישיר ל-קשרים לעולם הפיזי" title="קישור ישיר ל-קשרים לעולם הפיזי" translate="no">​</a></h3>
 <p>למחשבים יש שימושים רבים.
 שימוש חשוב אחד למחשבים הוא <em>ללמוד</em> על העולם הפיזי ולהבין טוב יותר את דפוסיו.
-שימושים היסטוריים בקטגוריה זו כללו חיזוי ליקויי חמה וגאות ושפל, הבנת תנועת גופות שמיים, ו(בזמנים קרובים יחסית) מידול פיצוצים.
+שימושים היסטוריים בקטגוריה זו כללו חיזוי ליקויי חמה וגאות ושפל, הבנת תנועת גרמי שמיים, ו(בזמנים קרובים יחסית) מידול פיצוצים.
 היום אין כמעט מעבדת פיזיקה בעולם שאין בה מחשב.</p>
 <p>באופן כללי יותר, פיזיקה ומחשוב תמיד היו שזורים זה בזה.
 מחשוב לא יכול להתקיים בוואקום: מידע דורש מדיום, ולחשב אנחנו צריכים לרתום את העולם הפיזי בצורה כלשהי.
 Rolf Landauer, מדען מחשב (ואיש IBM), הכיר לפני עשורים שמידע הוא פיזי, הקיים רק דרך ייצוג פיזי.
 <em>עיקרון לנדאואר</em> מבסס קשר בין מידע לחוקי התרמודינמיקה, אך למעשה ישנם קשרים רבים.</p>
-<p>הבנת העולם הפיזי היא מטרת הפיזיקה כדיסציפלינה, אך למעשה זוהי רחוב דו-כיווני.
+<p>הבנת העולם הפיזי היא מטרת הפיזיקה כדיסציפלינה, אך למעשה זהו רחוב דו-כיווני.
 דרך הבנתנו את העולם הפיזי, אנחנו מסוגלים לרתום טכנולוגיות חדשות שיעזרו לנו לחשב, ודרכן אנחנו ממשיכים ללמוד על העולם הפיזי — בעצם מושכים פיזיקה וטכנולוגיה מחשובית קדימה בשרוכי הנעליים שלהם.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="moores-law">חוק מור<a href="#moores-law" class="hash-link" aria-label="קישור ישיר ל-חוק מור" title="קישור ישיר ל-חוק מור" translate="no">​</a></h3>
 <p>חוק מור הוא תצפית שהמספר המקסימלי של טרנזיסטורים במעגל משולב מכפיל את עצמו בערך כל 2 שנים.
 במשך 5 העשורים האחרונים בערך, לא רק ראינו את המגמה הזו אלא גם קצרנו את פירותיה.
 עם יותר טרנזיסטורים על שבב אנחנו יכולים לבצע חישובים מורכבים יותר ולעשות זאת מהר יותר.
-זה הסיבה שמחשבים הפכו עוצמתיים יותר ויותר לאורך זמן.</p>
+זו הסיבה שמחשבים הפכו עוצמתיים יותר ויותר לאורך זמן.</p>
 <p>עם זאת, &quot;חוק&quot; מור מגיע לסיומו בהכרח.
 מומחים חלוקים על מתי זה יקרה, ויש הטוענים שזה כבר קרה.
 אך אנחנו יודעים בוודאות שחייב להסתיים בהכרח כיוון שיש גבול תיאורטי למזעור רכיבי מחשוב.
@@ -133,7 +133,7 @@ Rolf Landauer, מדען מחשב (ואיש IBM), הכיר לפני עשורים 
 <p>היום זהו אחד מהכיוונים המבטיחים ביותר למחשוב קוונטי.
 לפי מיטב הבנתנו, הטבע אינו קלאסי — הוא קוונטי.
 ולכן, מחשבים קוונטיים עשויים להיות כלים יקרי ערך להבנתו.
-מחשבים קלאסיים, לעומת זאת, יכולים רק לקרב את מה שמתרחש בפועל בטבע, ובמקרים מסוימים אותן
+מחשבים קלאסיים, לעומת זאת, יכולים רק לקרב את מה שמתרחש בפועל בטבע, ובמקרים מסוימים אותם
 קירובים מוגבלים מאוד.</p>
 <p>דרך אחת לחשוב על כך היא דרך אנלוגיה למנהרות רוח.
 דינמיקת נוזלים ידועה לשמצה כקשה לסימולציה וחיזוי מתמטי.
@@ -144,7 +144,7 @@ Rolf Landauer, מדען מחשב (ואיש IBM), הכיר לפני עשורים 
 כלומר הם מחקים את הטבע במקום לדמות אותו דרך נוסחאות וחישובים.</p>
 <p>אחרים המשיכו ברעיונות של פיינמן — וקישרו את הרעיונות הללו לתיאוריה של <em>מידע קוונטי</em> שכבר הייתה בתהליך פיתוחה.
 תחום <em>מידע ומחשוב קוונטי</em> נולד.
-מאז הוא התפתח לתחום עשיר ורב-תחומי של לימוד, ויתרונות רבים של מחשוב קוונטי על פני קלאסי זוהו במגוון רחב של הגדרות <em>תיאורטיות</em> הכוללות תקשורת, מחשוב וקריפטוגרפיה.</p>
+מאז הוא התפתח לתחום עשיר ורב-תחומי של לימוד, ויתרונות רבים של מידע ומחשוב קוונטיים על פני הקלאסיים זוהו במגוון רחב של הקשרים <em>תיאורטיים</em> הנוגעים לתקשורת, מחשוב וקריפטוגרפיה.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quantum-computing-in-practice">מחשוב קוונטי בפועל<a href="#quantum-computing-in-practice" class="hash-link" aria-label="קישור ישיר ל-מחשוב קוונטי בפועל" title="קישור ישיר ל-מחשוב קוונטי בפועל" translate="no">​</a></h3>
 <p>מבחינה מעשית, שני דברים נדרשים להעברת יתרונות תיאורטיים מסוג זה ליתרונות בעולם האמיתי: המכשירים עצמם והמתודולוגיות לשחרור הפוטנציאל שלהם.</p>
 <p>בניגוד למחשבים קלאסיים, אין לאף אחד מחשב קוונטי שמור בכיסו האחורי.
@@ -164,7 +164,7 @@ Rolf Landauer, מדען מחשב (ואיש IBM), הכיר לפני עשורים 
 אך ישנם תהליכים פיזיקליים אחרים — כמו כאלה המעורבים בעיצוב סוללות או בתגובות כימיות מסוימות — שבהם יכולת המחשב הקוונטי לחקות את הטבע עשויה להוביל ליתרון קוונטי.
 באופן כללי יותר, ישנן בעיות רבות שקשות מדי או יקרות מדי אפילו לסופר-מחשבים חדישים, כולל בעיות שרלוונטיות ביותר לחברה שלנו.
 המחשוב הקוונטי לא בהכרח יציע פתרונות לכולן, אך עשוי להציע פתרונות לחלקן.</p>
-<p>שלושת תחומי היישום הבאים מייצגים יעדים בתחום המחשוב הקוונטי הרועש, לפני יישום תיקון שגיאות קוונטי וסובלנות תקלות.</p>
+<p>שלושת תחומי היישום הבאים מייצגים יעדים בתחום המחשוב הקוונטי הרועש, לפני יישום תיקון שגיאות קוונטי ועמידות-תקלות.</p>
 <ul>
 <li class="">
 <p>אופטימיזציה</p>
@@ -182,7 +182,7 @@ Rolf Landauer, מדען מחשב (ואיש IBM), הכיר לפני עשורים 
 בשמונה השנים האלה, עשינו התקדמות בחזיתות רבות.</p>
 <p>מעבדים קוונטיים רבים של IBM נגישים כעת דרך הענן, כולם עם מעל 100 qubit.
 אך לא רק גודל המעבדים חשוב — זה רק מדד אחד שאכפת לנו ממנו.
-איכות Gate השתפרה גם היא באופן דרמטי, וגם הכנסנו שיטות להפחתה ולהקלת שגיאות פנימיות למערכות קוונטיות, אפילו כשאנחנו דוחפים קדימה ליצירת מערכות עמידות-תקלות.
+איכות Gate השתפרה גם היא באופן דרמטי, וגם הכנסנו שיטות לצמצום ולהפחתת שגיאות פנימיות למערכות קוונטיות, אפילו כשאנחנו דוחפים קדימה ליצירת מערכות עמידות-תקלות.
 שלושה מדדים בסיסיים — <em>קנה מידה</em>, <em>איכות</em>, ו<em>מהירות</em> — חיוניים למעקב אחר שיפור הביצועים.</p>
 <ul>
 <li class="">
@@ -204,7 +204,7 @@ Gate שפועלות על qubit בודדים אינן נוטות לשגיאות �
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">סיכום<a href="#conclusion" class="hash-link" aria-label="קישור ישיר ל-סיכום" title="קישור ישיר ל-סיכום" translate="no">​</a></h2>
 <p>זוהי ממש תקופה מרגשת לעבוד בתחום המחשוב הקוונטי: לראשונה בהיסטוריה אנחנו יכולים להתחיל לחקור אזור מחשוב שנמצא מעבר למחשוב קלאסי.</p>
-<p>T.J. Watson חזה פעם בפרסום שוק עולמי לכמה מחשבים בלבד.
+<p>T.J. Watson חזה פעם, באופן מפורסם, שוק עולמי לכמה מחשבים בלבד.
 אנחנו עשויים לצחוק כיום על כמה שהוא טעה — אך כשאנחנו עושים זאת עלינו להכיר שיש לנו את יתרון הידיעה בדיעבד.
 ועלינו גם להודות שכבני אדם, יש לנו נטייה כללית לזלזל באופן קיצוני בפוטנציאל של טכנולוגיות עתידיות.
 עכשיו כשהגיע תורנו ואנחנו לוקחים על עצמנו תפקידים של חלוצים מוקדמים של מחשוב קוונטי, עלינו לזכור זאת.</p>
