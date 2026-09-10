@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.67fd96f0.js" defer="defer"></script>
-<script src="/assets/js/main.4f397968.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9a8f82b4.js" defer="defer"></script>
+<script src="/assets/js/main.a2664b3e.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/tutorials/operator-back-propagation" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/tutorials/operator-back-propagation" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -29,15 +29,15 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-outcomes">תוצאות למידה<a href="#learning-outcomes" class="hash-link" aria-label="קישור ישיר ל-תוצאות למידה" title="קישור ישיר ל-תוצאות למידה" translate="no">​</a></h2>
 <ul>
 <li class="">
-<p>How to use <a href="https://github.com/Qiskit/qiskit-addon-obp" target="_blank" rel="noopener noreferrer" class=""><code>qiskit-addon-obp</code></a> to reduce the depth of the quantum circuit at the cost of an increased number of circuit executions</p>
+<p>כיצד להשתמש ב-<a href="https://github.com/Qiskit/qiskit-addon-obp" target="_blank" rel="noopener noreferrer" class=""><code>qiskit-addon-obp</code></a> כדי להפחית את עומק המעגל הקוונטי במחיר מספר מוגדל של ביצועי מעגלים</p>
 </li>
 <li class="">
-<p>How to use <a href="https://github.com/Qiskit/qiskit-addon-utils" target="_blank" rel="noopener noreferrer" class=""><code>qiskit-addon-utils</code></a> to construct XYZ Hamiltonians and their time-evolution circuits</p>
+<p>כיצד להשתמש ב-<a href="https://github.com/Qiskit/qiskit-addon-utils" target="_blank" rel="noopener noreferrer" class=""><code>qiskit-addon-utils</code></a> לבניית המילטוניאנים XYZ ומעגלי התפתחות הזמן שלהם</p>
 </li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">דרישות מוקדמות<a href="#prerequisites" class="hash-link" aria-label="קישור ישיר ל-דרישות מוקדמות" title="קישור ישיר ל-דרישות מוקדמות" translate="no">​</a></h2>
 <ul>
-<li class="">Using the <a href="https://docs.quantum.ibm.com/api/qiskit-ibm-runtime/estimator-v2" target="_blank" rel="noopener noreferrer" class="">Estimator</a> primitive to calculate expectation values of an observable</li>
+<li class="">שימוש ב-<a href="https://docs.quantum.ibm.com/api/qiskit-ibm-runtime/estimator-v2" target="_blank" rel="noopener noreferrer" class="">Estimator</a> primitive לחישוב ערכי תוחלת של אובזרבל</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="background">רקע<a href="#background" class="hash-link" aria-label="קישור ישיר ל-רקע" title="קישור ישיר ל-רקע" translate="no">​</a></h2>
 <p>התפשטות אחורנית של אופרטורים (Operator backpropagation) היא טכניקה הכוללת ספיגה של פעולות מסוף מעגל קוונטי אל תוך האובזרבבל הנמדד, מה שבדרך כלל מקטין את העומק של המעגל תוך תוספת של איברים נוספים באובזרבבל. המטרה היא להתפשט אחורנית על כמה שיותר מהמעגל בלי לאפשר לאובזרבבל לגדול יותר מדי. יישום מבוסס Qiskit זמין ב-OBP Qiskit addon. קרא את <a href="https://qiskit.github.io/qiskit-addon-obp/" target="_blank" rel="noopener noreferrer" class="">התיעוד</a> המתאים למידע נוסף.</p>

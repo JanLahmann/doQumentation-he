@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.67fd96f0.js" defer="defer"></script>
-<script src="/assets/js/main.4f397968.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9a8f82b4.js" defer="defer"></script>
+<script src="/assets/js/main.a2664b3e.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/tutorials/compilation-methods-for-hamiltonian-simulation-circuits" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -29,28 +29,28 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-outcomes">תוצאות הלמידה<a href="#learning-outcomes" class="hash-link" aria-label="קישור ישיר ל-תוצאות הלמידה" title="קישור ישיר ל-תוצאות הלמידה" translate="no">​</a></h2>
 <ul>
 <li class="">
-<p>How to use the Qiskit transpiler with SABRE for layout and routing optimization</p>
+<p>כיצד להשתמש ב-Qiskit transpiler עם SABRE לאופטימיזציה של פריסה וניתוב</p>
 </li>
 <li class="">
-<p>How to leverage the AI-powered transpiler for advanced circuit optimization</p>
+<p>כיצד למנף את ה-AI-powered transpiler לאופטימיזציה מתקדמת של מעגלים</p>
 </li>
 <li class="">
-<p>How to use the Rustiq plugin for synthesizing <code>PauliEvolutionGate</code> operations in Hamiltonian simulation circuits</p>
+<p>כיצד להשתמש בתוסף Rustiq לסינתזת פעולות <code>PauliEvolutionGate</code> במעגלי סימולציית המילטון</p>
 </li>
 <li class="">
-<p>How to benchmark and compare compilation methods using two-qubit depth, total gate count, and runtime</p>
+<p>כיצד לבצע בנצ&#x27;מרק ולהשוות שיטות קומפילציה לפי עומק דו-ביט, מספר שערים כולל וזמן ריצה</p>
 </li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">דרישות מוקדמות<a href="#prerequisites" class="hash-link" aria-label="קישור ישיר ל-דרישות מוקדמות" title="קישור ישיר ל-דרישות מוקדמות" translate="no">​</a></h2>
 <ul>
 <li class="">
-<p><a class="" href="/guides/transpile">Transpilation concepts</a></p>
+<p><a class="" href="/guides/transpile">מושגי טרנספילציה</a></p>
 </li>
 <li class="">
-<p><a class="" href="/guides/transpiler-stages">Transpiler stages</a></p>
+<p><a class="" href="/guides/transpiler-stages">שלבי ה-Transpiler</a></p>
 </li>
 <li class="">
-<p><a class="" href="/guides/transpile-with-pass-managers">Transpile with pass managers</a></p>
+<p><a class="" href="/guides/transpile-with-pass-managers">טרנספילציה עם pass managers</a></p>
 </li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="background">רקע<a href="#background" class="hash-link" aria-label="קישור ישיר ל-רקע" title="קישור ישיר ל-רקע" translate="no">​</a></h2>
