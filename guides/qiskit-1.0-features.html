@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.259c3939.js" defer="defer"></script>
-<script src="/assets/js/main.6e1f8507.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.1718b8df.js" defer="defer"></script>
+<script src="/assets/js/main.d345819b.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/qiskit-1.0-features" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/qiskit-1.0-features" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -26,7 +26,7 @@
 <!-- -->
 <header><h1>שינויי תכונות ב-Qiskit v1.0</h1></header>
 <p>מדריך זה מתאר נתיבי מעבר עבור שינויי התכונות החשובים ביותר ב-Qiskit v1.0, מאורגנים לפי מודול.
-השתמש בתוכן העניינים בצד ימין כדי לנווט למודול שאתה מעוניין בו.</p>
+השתמש בתוכן העניינים בצד שמאל כדי לנווט למודול שאתה מעוניין בו.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-v10-migration-tool">כלי המעבר של Qiskit v1.0<a href="#qiskit-v10-migration-tool" class="hash-link" aria-label="קישור ישיר ל-כלי המעבר של Qiskit v1.0" title="קישור ישיר ל-כלי המעבר של Qiskit v1.0" translate="no">​</a></h2>
 <p>כדי להקל על תהליך המעבר, אתה יכול להשתמש בכלי
 <a href="https://github.com/qiskit-community/flake8-qiskit-migration" target="_blank" rel="noopener noreferrer" class=""><code>flake8-qiskit-migration</code></a>
@@ -218,7 +218,7 @@
 <li class="">
 <p><a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.primitives.BaseEstimatorV2#run" target="_blank" rel="noopener noreferrer" class=""><code>EstimatorV2.run</code></a>
 מכניס ארגומנט <code>precision</code> המציין את פסי השגיאה שמימוש ה-primitive
-אמור לכוון אליהם עבור הערכות ערכי ציפייה:</p>
+אמור לכוון אליהם עבור הערכות של ערכי תוחלת:</p>
 <div class="executable-code"><div class="executable-code__code" style="display:block"><div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token comment" style="color:#999988;font-style:italic"># Estimate expectation values for two PUBs, both with 0.05 precision.</span><span class="token plain"></span></span><br></div><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">estimator_v2</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">run</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">circuit1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> obs_array1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span></span><br></div><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">circuit2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> obs_array_2</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> precision</span><span class="token operator" style="color:#393A34">=</span><span class="token number" style="color:#36acaa">0.05</span><span class="token plain"></span></span><br></div><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">)</span></span><br></div></code></pre></div></div></div></div>
 </li>
 </ul>
@@ -274,7 +274,7 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fake-provider">fake_provider<a href="#fake-provider" class="hash-link" aria-label="קישור ישיר ל-fake_provider" title="קישור ישיר ל-fake_provider" translate="no">​</a></h3>
 <p>רוב הרכיבים הגלויים למשתמש של
 <code>qiskit.providers.fake_provider</code> הועברו לחבילת Python <code>qiskit-ibm-runtime</code>. זה כולל
-את מחלקות ה-fake provider, את כל ה-Backends המזויפים הספציפיים לסביבה (כגון
+את מחלקות ה-fake provider, את כל ה-Backends המזויפים הספציפיים להתקן (כגון
 <code>FakeVigo</code>, <code>FakeNairobiV2</code> ו-<code>FakeSherbrooke</code>), ואת מחלקות הבסיס של ה-fake backend.
 לחץ על הלשוניות הבאות כדי לראות את המחלקות המושפעות.</p>
 <div class="theme-tabs-container tabs-container tabList__CuJ"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_LNqP tabs__item--active">Fake Backends</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_LNqP">Fake Providers</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_Ymn6"><ul>
@@ -534,8 +534,7 @@ builder (ראה <a href="#injecting-circuit-gate-operations" class="">הזרקת
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskittest">qiskit.test<a href="#qiskittest" class="hash-link" aria-label="קישור ישיר ל-qiskit.test" title="קישור ישיר ל-qiskit.test" translate="no">​</a></h2>
 <p>המודול <code>qiskit.test</code> אינו עוד מודול ציבורי. זה מעולם לא היה מיועד להיות ציבורי,
 ולא לשימוש מחוץ לחבילת הבדיקות של Qiskit. כל הפונקציונליות הייתה ספציפית ל-Qiskit ואין
-חלופה מסופקת; אם היית צריך פונקציונליות דומה, עליך לכלול אותה ב-
-פריסות הבדיקה שלך.</p>
+חלופה מסופקת; אם היית צריך פונקציונליות דומה, עליך לכלול אותה במסגרות הבדיקה שלך.</p>
 <span id="qiskit.tools"></span>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskittools">qiskit.tools<a href="#qiskittools" class="hash-link" aria-label="קישור ישיר ל-qiskit.tools" title="קישור ישיר ל-qiskit.tools" translate="no">​</a></h2>
 <p>המודול <code>qiskit.tools</code> הוסר ב-Qiskit v1.0. רוב הפונקציונליות הזו
