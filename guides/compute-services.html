@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.0193351d.js" defer="defer"></script>
-<script src="/assets/js/main.8d5262a3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.992b4825.js" defer="defer"></script>
+<script src="/assets/js/main.7a6a613c.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/compute-services" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/compute-services" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -39,10 +39,10 @@
 <p>כדי להריץ עבודות קוונטיות, משתמשים יוצרים <a class="" href="/guides/instances">מופע</a> בתוך הפלטפורמה. כל מופע מספק את שם משאב הענן (CRN) שלו, הנדרש להגשת עומסי עבודה ל-QPUs הזמינים. לאחר ההגדרה, משתמשים יכולים לבחור או לשנות תוכניות גישה, לעקוב אחר ביצוע עבודות, לנתח יומנים ולשלב את הפלטפורמה בצורה חלקה לתוך תהליכי הפיתוח שלהם. יחד, יכולות אלה הופכות את IBM Quantum Platform למרכז השליטה לגישה ל-QPU ולהרצת יישומים קוונטיים.</p>
 <p>לפרטים נוספים, קרא את <a class="" href="/guides/cloud-setup">תיעוד ההגדרה</a> לתחילת עבודה עם IBM Quantum Platform.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-serverless">Qiskit Serverless<a href="#qiskit-serverless" class="hash-link" aria-label="קישור ישיר ל-Qiskit Serverless" title="קישור ישיר ל-Qiskit Serverless" translate="no">​</a></h2>
-<p>בניית יישומים קוונטיים בקנה מידה שימושי דורשת בדרך כלל מגוון של דרישות משאבי מחשוב. Qiskit Serverless (<code>qiskit-ibm-catalog.QiskitServerless</code>) מספק ממשק פשוט להרצת עומסי עבודה על משאבים קוונטיים-קלאסיים. זה כולל פריסת תוכניות ל-IBM Quantum Platform והרצת עומסי עבודה מרחוק, כמו גם ניהול משאבים קל למקרי שימוש של מולטי-ענן ומחשוב-על קוונטי-מרכזי. ראה מידע נוסף ב<a class="" href="/guides/serverless">תיעוד של Qiskit Serverless</a> על אופן השימוש באוסף כלים זה כדי:</p>
+<p>בניית יישומים קוונטיים בקנה מידה של תועלת (utility-scale) דורשת בדרך כלל מגוון של דרישות משאבי מחשוב. Qiskit Serverless (<code>qiskit-ibm-catalog.QiskitServerless</code>) מספק ממשק פשוט להרצת עומסי עבודה על משאבים קוונטיים-קלאסיים. זה כולל פריסת תוכניות ל-IBM Quantum Platform והרצת עומסי עבודה מרחוק, כמו גם ניהול משאבים קל למקרי שימוש של מולטי-ענן ומחשוב-על ממוקד-קוונטים. ראה מידע נוסף ב<a class="" href="/guides/serverless">תיעוד של Qiskit Serverless</a> על אופן השימוש באוסף כלים זה כדי:</p>
 <ul>
 <li class="">
-<p>להקביל משימות קלאסיות, כגון עיבוד מקדים ועיבוד לאחר</p>
+<p>להקביל משימות קלאסיות, כגון עיבוד מקדים ועיבוד-בדיעבד (post-processing)</p>
 </li>
 <li class="">
 <p>לשמור עומסי עבודה ממושכים בענן, גם אם המחשב הנייד שלך כבוי</p>
@@ -60,7 +60,7 @@
 <p><strong>פונקציות Circuit</strong>: שירותים הכוללים טכניקות transpilation, דיכוי שגיאות, צמצום שגיאות ועיבוד לאחר שמקבלים Circuit מופשטות ו-observables מדידה רצויים כקלט. עם פונקציות Circuit, משתמשים יכולים לגלות אלגוריתמים ויישומים חדשים מבלי שיצטרכו לנהל transpilation או ביצועי חומרה קוונטית.</p>
 </li>
 <li class="">
-<p><strong>פונקציות יישום</strong>: שירותים הכוללים תהליכי עבודה קוונטיים שלמים, ממיפוי קלאסי לקוונטי, אופטימיזציה לחומרה, הרצה על חומרה ועיבוד לאחר. משתמשים יכולים ליצור אב-טיפוס של יישומים בתעשייה עם קלט ופלט ידועים בתחום.</p>
+<p><strong>פונקציות יישום</strong>: שירותים הכוללים תהליכי עבודה קוונטיים שלמים, ממיפוי קלאסי לקוונטי, אופטימיזציה לחומרה, הרצה על חומרה ועיבוד-בדיעבד (post-processing). משתמשים יכולים ליצור אב-טיפוס של יישומים בתעשייה עם קלט ופלט המוכרים למומחי התחום.</p>
 </li>
 </ul>
 <p>מצא פרטים נוספים ב<a class="" href="/guides/functions">תיעוד של Qiskit Functions</a>.</p>

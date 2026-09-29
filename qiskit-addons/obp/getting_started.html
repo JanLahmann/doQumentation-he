@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.0193351d.js" defer="defer"></script>
-<script src="/assets/js/main.8d5262a3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.992b4825.js" defer="defer"></script>
+<script src="/assets/js/main.7a6a613c.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/qiskit-addons/obp/getting_started" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/qiskit-addons/obp/getting_started" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -25,7 +25,7 @@
 <!-- -->
 <!-- -->
 <p>הפצה לאחור של אופרטורים היא טכניקה שבה סופגים פעולות מסוף המעגל הקוונטי לתוך אופרטור פאולי, ובדרך כלל מצמצמים את עומק המעגל במחיר של איברים נוספים באופרטור. המטרה היא להפיץ לאחור כמה שיותר מהמעגל מבלי לאפשר לאופרטור לגדול יותר מדי.</p>
-<p>דרך אחת לאפשר הפצה לאחור עמוקה יותר לתוך המעגל, תוך מניעת גדילה יתרה של האופרטור, היא לקצץ איברים עם מקדמים קטנים במקום להוסיף אותם לאופרטור. קיצוץ איברים עשוי להביא למספר קטן יותר של מעגלים קוונטיים לביצוע, אך הדבר גורם לשגיאה מסוימת בחישוב ערך הציפייה הסופי, שהיא פרופורציונלית לגודל המקדמים של האיברים שנוקצצו.
+<p>דרך אחת לאפשר הפצה לאחור עמוקה יותר לתוך המעגל, תוך מניעת גדילה יתרה של האופרטור, היא לקצץ איברים עם מקדמים קטנים במקום להוסיף אותם לאופרטור. קיצוץ איברים עשוי להביא למספר קטן יותר של מעגלים קוונטיים לביצוע, אך הדבר גורם לשגיאה מסוימת בחישוב ערך הציפייה הסופי, שהיא פרופורציונלית לגודל המקדמים של האיברים שקוצצו.
 במדריך זה נממש <a href="https://quantum.cloud.ibm.com/docs/guides/serverless#qiskit-patterns-with-quantum-serverless" target="_blank" rel="noopener noreferrer" class="">דפוס Qiskit</a> לסימולציית הדינמיקה הקוונטית של שרשרת ספין הייזנברג באמצעות הפצה לאחור של אופרטורים:</p>
 <ul>
 <li class="">
@@ -115,7 +115,7 @@ SparsePauliOp([&#x27;IIIIIIIXXI&#x27;, &#x27;IIIIIIIYYI&#x27;, &#x27;IIIIIIIZZI&
  0.34906585+0.j])
 ```
 
-מהאופרטור הקוונטי, אנחנו יכולים לייצר מעגל קוונטי שמדמה את אבולוציית הזמן שלו.
+מהאופרטור על ה-qubits אנחנו יכולים לייצר מעגל קוונטי שמדמה את אבולוציית הזמן שלו.
 שוב, המודול [qiskit_addon_utils.problem_generators](https://qiskit.github.io/qiskit-addon-utils/stubs/qiskit_addon_utils.problem_generators.html) בא לעזרתנו עם פונקציה נוחה בדיוק לכך:
 
 ```python
@@ -155,7 +155,7 @@ Separated the circuit into 18 slices.
 
 במהלך ההפצה לאחור, מספר האיברים באופרטור יתקרב בדרך כלל במהירות ל-$4^N$, כאשר $N$ הוא מספר ה-Qubits. ניתן להגביל את גודל האופרטור על ידי ציון ה-kwarg ‏``operator_budget`` של הפונקציה ``backpropagate``, שמקבל מופע של [OperatorBudget](https://qiskit.github.io/qiskit-addon-obp/stubs/qiskit_addon_obp.utils.simplify.OperatorBudget.html).
 
-כאן אנחנו מציינים שההפצה לאחור תעצור כאשר מספר קבוצות פאולי המתחלפות ב-qubit-wise באופרטור יעלה על 8.
+כאן אנחנו מציינים שההפצה לאחור תעצור כאשר מספר קבוצות פאולי המתחלפות ברמת ה-qubit (qubit-wise) באופרטור יעלה על 8.
 
 ```python
 from qiskit_addon_obp.utils.simplify import OperatorBudget
@@ -167,7 +167,7 @@ op_budget = OperatorBudget(max_qwc_groups=8)
 
 ראשית, נציין את ה-observable פאולי-Z על qubit 0, ונפיץ לאחור פרוסות ממעגל אבולוציית הזמן עד שהאיברים ב-observable לא יוכלו עוד להיכלל ב-8 קבוצות פאולי מתחלפות ב-qubit-wise או פחות.
 
-להלן תראה שהפצנו לאחור 7 פרוסות אך השתמשנו רק ב-6 מתוך 8 קבוצות הפאולי שהוקצו. משמע זאת שהפצה לאחור של פרוסה נוספת תגרום למספר קבוצות הפאולי לחרוג מ-8. נוכל לאמת שכך הדבר על ידי בדיקת ה-metadata שהוחזר.
+להלן תראה שהפצנו לאחור 7 פרוסות אך השתמשנו רק ב-6 מתוך 8 קבוצות הפאולי שהוקצו. משמעות הדבר היא שהפצה לאחור של פרוסה נוספת תגרום למספר קבוצות הפאולי לחרוג מ-8. נוכל לאמת שכך הדבר על ידי בדיקת ה-metadata שהוחזר.
 
 ```python
 from qiskit.quantum_info import SparsePauliOp
@@ -283,7 +283,7 @@ bp_obs_trunc_isa = bp_obs_trunc.apply_layout(bp_circuit_trunc_isa.layout)
 
 ערך הציפייה על האופרטור עם איברים מקוצצים מכיל שגיאה בסדר גודל של ``1e-4``, שנמצאת בתוך הסבילות הצפויה.
 
-**הערה:** אנחנו משתמשים ב-``Estimator`` primitive מבוסס וקטור-מצב כדי להמחיש את ההשפעה של קיטום על הפלט. כדי להריץ על ה-Backend שאליו בוצעה טרנספילציה של הניסויים בשלב 2, יש לייבא את [EstimatorV2](https://quantum.cloud.ibm.com/docs/api/qiskit-ibm-runtime/estimator-v2) מ-``qiskit-ibm-runtime`` ולהעביר את מופע ה-Backend לבנאי.
+**הערה:** אנחנו משתמשים ב-``Estimator`` primitive מבוסס וקטור-מצב כדי להמחיש את ההשפעה של הקיצוץ על הפלט. כדי להריץ על ה-Backend שאליו בוצעה טרנספילציה של הניסויים בשלב 2, יש לייבא את [EstimatorV2](https://quantum.cloud.ibm.com/docs/api/qiskit-ibm-runtime/estimator-v2) מ-``qiskit-ibm-runtime`` ולהעביר את מופע ה-Backend לבנאי.
 
 ```python
 from qiskit.primitives import StatevectorEstimator as Estimator
