@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.382e6528.js" defer="defer"></script>
-<script src="/assets/js/main.43e200b4.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5c051da7.js" defer="defer"></script>
+<script src="/assets/js/main.17fa9754.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/learning/courses/general-formulation-of-quantum-information/density-matrices/introduction" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -27,24 +27,24 @@
 <!-- -->
 <p>בקורס &quot;יסודות המידע הקוונטי&quot; דנו במסגרת לתיאור מידע קוונטי שבה מצבים קוונטיים מיוצגים על-ידי וקטורי מצב קוונטיים, פעולות מיוצגות על-ידי מטריצות יוניטריות, וכן הלאה.
 לאחר מכן השתמשנו במסגרת זו בקורס &quot;יסודות האלגוריתמים הקוונטיים&quot; לתיאור ולניתוח אלגוריתמים קוונטיים.</p>
-<p>למעשה, ישנם שני תיאורים מתמטיים נפוצים של מידע קוונטי, כאשר זה שהוצג ב&quot;יסודות המידע הקוונטי&quot; הוא הפשוט מבין השניים. לכן נכנה אותו <em>הניסוח הפשטני של המידע הקוונטי.</em></p>
+<p>למעשה, ישנם שני תיאורים מתמטיים נפוצים של מידע קוונטי, כאשר זה שהוצג ב&quot;יסודות המידע הקוונטי&quot; הוא הפשוט מבין השניים. לכן נכנה אותו <em>הניסוח המפושט של המידע הקוונטי.</em></p>
 <p>בשיעור זה נתחיל לחקור את התיאור השני, שהוא <em>הניסוח הכללי של המידע הקוונטי.</em>
-הוא, כמובן, עקבי עם הניסוח הפשטני, אך מציע יתרונות ראויים לציון.
+הוא, כמובן, עקבי עם הניסוח המפושט, אך מציע יתרונות ראויים לציון.
 לדוגמה, ניתן להשתמש בו לתיאור אי-ודאות במצבים קוונטיים ולמודל השפעות הרעש על חישובים קוונטיים.
 הוא מספק את הבסיס לתורת המידע הקוונטי, קריפטוגרפיה קוונטית ונושאים נוספים הקשורים למידע קוונטי, ומבחינה מתמטית הוא גם יפה במיוחד.</p>
-<p>בניסוח הכללי של המידע הקוונטי, מצבים קוונטיים אינם מיוצגים על-ידי וקטורים כמו בניסוח הפשטני, אלא על-ידי מחלקה מיוחדת של מטריצות הנקראות <em>מטריצות צפיפות</em>. להלן מספר נקודות מפתח המניעות את השימוש בהן.</p>
+<p>בניסוח הכללי של המידע הקוונטי, מצבים קוונטיים אינם מיוצגים על-ידי וקטורים כמו בניסוח המפושט, אלא על-ידי מחלקה מיוחדת של מטריצות הנקראות <em>מטריצות צפיפות</em>. להלן מספר נקודות מפתח המניעות את השימוש בהן.</p>
 <ul>
 <li class="">
 <p>מטריצות צפיפות יכולות לייצג מחלקה רחבה יותר של מצבים קוונטיים מאשר וקטורי מצב קוונטיים. זה כולל מצבים המתעוררים בהקשרים מעשיים, כגון מצבים של מערכות קוונטיות שנחשפו לרעש, וכן בחירות אקראיות של מצבים קוונטיים.</p>
 </li>
 <li class="">
-<p>מטריצות צפיפות מאפשרות לנו לתאר מצבים של חלקים מבודדים של מערכות, כגון מצבו של מערכת אחת שמסתבר שהיא שזורה עם מערכת אחרת שאנו רוצים להתעלם ממנה. הדבר אינו קל לביצוע בניסוח הפשטני של המידע הקוונטי.</p>
+<p>מטריצות צפיפות מאפשרות לנו לתאר מצבים של חלקים מבודדים של מערכות, כגון מצבה של מערכת אחת שבמקרה שזורה עם מערכת אחרת שאנו רוצים להתעלם ממנה. הדבר אינו קל לביצוע בניסוח המפושט של המידע הקוונטי.</p>
 </li>
 <li class="">
-<p>מצבים קלאסיים (הסתברותיים) יכולים גם הם להיות מיוצגים על-ידי מטריצות צפיפות, ספציפית אלו שהן <abbr title="מטריצה ריבועית היא אלכסונית כאשר כל הרשומות מחוץ לאלכסון שלה הן אפס." style="text-decoration:underline dotted;text-underline-offset:2px;cursor:help">אלכסוניות.</abbr> זה חשוב מכיוון שהוא מאפשר לתאר מידע קוונטי וקלאסי יחד במסגרת מתמטית אחת, כאשר מידע קלאסי הוא בעצם מקרה מיוחד של מידע קוונטי.</p>
+<p>מצבים קלאסיים (הסתברותיים) יכולים גם הם להיות מיוצגים על-ידי מטריצות צפיפות, ובפרט מטריצות שהן <abbr title="מטריצה ריבועית היא אלכסונית כאשר כל האיברים מחוץ לאלכסון שלה הם אפס." style="text-decoration:underline dotted;text-underline-offset:2px;cursor:help">אלכסוניות.</abbr> זה חשוב מכיוון שהוא מאפשר לתאר מידע קוונטי וקלאסי יחד במסגרת מתמטית אחת, כאשר מידע קלאסי הוא בעצם מקרה מיוחד של מידע קוונטי.</p>
 </li>
 </ul>
-<p>במבט ראשון, עשוי להיראות מוזר שמצבים קוונטיים מיוצגים על-ידי מטריצות, שבאופן טיפוסי יותר מייצגות פעולות, ולא מצבים. לדוגמה, מטריצות יוניטריות מתארות פעולות קוונטיות בניסוח הפשטני של המידע הקוונטי ומטריצות סטוכסטיות מתארות פעולות הסתברותיות בהקשר של מידע קלאסי.
+<p>במבט ראשון, עשוי להיראות מוזר שמצבים קוונטיים מיוצגים על-ידי מטריצות, שבאופן טיפוסי יותר מייצגות פעולות, ולא מצבים. לדוגמה, מטריצות יוניטריות מתארות פעולות קוונטיות בניסוח המפושט של המידע הקוונטי ומטריצות סטוכסטיות מתארות פעולות הסתברותיות בהקשר של מידע קלאסי.
 לעומת זאת, למרות שמטריצות צפיפות הן אכן מטריצות, הן מייצגות מצבים — לא פעולות.</p>
 <p>למרות זאת, העובדה שמטריצות צפיפות יכולות (כמו כל מטריצה) להיות קשורות למיפויים לינאריים היא היבט קריטי ביותר שלהן.
 לדוגמה, <em>הערכים העצמיים</em> של מטריצות צפיפות מתארים את האקראיות או אי-הוודאות הטמונה במצבים שהן מייצגות.</p>
