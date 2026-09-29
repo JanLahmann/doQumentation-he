@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.ac1d4b4b.js" defer="defer"></script>
-<script src="/assets/js/main.b0c7c4e6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e9a15052.js" defer="defer"></script>
+<script src="/assets/js/main.36e1cbb7.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/qiskit-2.0" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -97,9 +97,9 @@ Target גנרי עם שגיאות ומשכים מולאים מראש. ניתן �
 </li>
 <li class="">
 <p>לא מומלץ לספק <code>coupling_map</code> ו/או <code>basis_gates</code> יחד עם <code>backend</code>, ומ-v2.0 יוצג <code>UserWarning</code>.
-במקרים אלה קיימות מספר מקורות אמת,
-ולא ניתן לגזור מידע כגון שגיאות ומשכי Gate של ה-Backend מתוך המידע שסופק.
-האלטרנטיבה המוצעת היא הגדרת Target מותאם המשלב את האילוצים הנבחרים,
+במקרים אלה קיימים כמה מקורות אמת,
+ולא ניתן לגזור מידע כגון שגיאות ומשכי שער של ה-Backend מתוך המידע שסופק.
+החלופה המוצעת היא הגדרת Target מותאם המשלב את האילוצים הנבחרים,
 בין אם מאפס, באמצעות <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.Target#from_configuration" target="_blank" rel="noopener noreferrer" class=""><code>Target.from_configuration</code></a> או <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.providers.fake_provider.GenericBackendV2" target="_blank" rel="noopener noreferrer" class=""><code>GenericBackendV2</code></a>.</p>
 </li>
 <li class="">
@@ -152,8 +152,8 @@ Target גנרי עם שגיאות ומשכים מולאים מראש. ניתן �
 <p>השדה <code>calibration</code> של <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.InstructionProperties" target="_blank" rel="noopener noreferrer" class=""><code>InstructionProperties</code></a>.</p>
 </li>
 </ul>
-<p>הסיבה לכך היא שמעבדי ה-QPU של IBM Quantum® הפסיקו להציע גישה ברמת Pulse, ולצוות Qiskit לא היו עוד משאבים לתחזק את החבילה הנדירה בשימוש.
-תוכל להמשיך להשתמש במודול <code>qiskit.pulse</code> בזמן שימוש בסדרת v1.x של Qiskit, שיש לה תמיכת תיקוני באגים עד ספטמבר 2024 ותמיכת אבטחה עד מרץ 2025, אך המודול הוסר מסדרת v2.x.</p>
+<p>הסיבה לכך היא שמעבדי ה-QPU של IBM Quantum® הפסיקו להציע גישה ברמת Pulse, ולצוות Qiskit לא היו עוד משאבים לתחזק חבילה שכמעט לא הייתה בשימוש.
+תוכל להמשיך להשתמש במודול <code>qiskit.pulse</code> כל עוד אתה עובד עם סדרת v1.x של Qiskit, שיש לה תמיכת תיקוני באגים עד ספטמבר 2024 ותמיכת אבטחה עד מרץ 2025, אך המודול הוסר מסדרת v2.x.</p>
 <p>רוב השימושים ב-<code>qiskit.pulse</code> ניתנים להחלפה בגישה ישירה ל-Gates חלקיים ב-QPU מסוג IBM Quantum Heron (ודורות מאוחרים יותר, אם רלוונטי).
 ניתן לקרוא עוד ב<a class="" href="/guides/pulse-migration">מדריך המעבר משימוש ב-Pulse ל-Gates חלקיים</a>.</p>
 <p>לא ניתן עוד לטעון קבצי QPY המכילים אובייקטים מסוג <code>ScheduleBlock</code> ב-Qiskit v2.0 בגלל הסרת Qiskit Pulse.
