@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.e1f66a64.js" defer="defer"></script>
-<script src="/assets/js/main.0b313d6a.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.8947ee2b.js" defer="defer"></script>
+<script src="/assets/js/main.05329d1a.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -119,13 +119,13 @@
 <p>עכשיו, אנחנו כמעט מוכנים להריץ את ה-Circuit — מבטיח! אבל קודם, חשוב לציין שאפשר לשלוח את העבודה שלך במגוון דרכים שונות, הנקראות מצבי הרצה.</p>
 <ul>
 <li class="">
-<p>מצב Job: בקשה בודדת של ה-Estimator או ה-Sampler primitive נשלחת ללא context manager. Circuits וקלטים ארוזים כ-primitive unified blocs (PUBs) ומוגשים כמשימת הרצה על המחשב הקוונטי.</p>
+<p>מצב job: בקשה בודדת של ה-Estimator או ה-Sampler primitive נשלחת ללא context manager. Circuits וקלטים ארוזים כ-primitive unified blocs (PUBs) ומוגשים כמשימת הרצה על המחשב הקוונטי.</p>
 </li>
 <li class="">
-<p>מצב Batch: מנהל רב-עבודות להרצה יעילה של ניסוי המורכב מחבילה של עבודות עצמאיות. השתמש במצב Batch כדי להגיש מספר עבודות primitive בו-זמנית.</p>
+<p>מצב batch: מנהל רב-עבודות להרצה יעילה של ניסוי המורכב מחבילה של עבודות עצמאיות. השתמש ב-batch mode כדי להגיש מספר עבודות primitive בו-זמנית.</p>
 </li>
 <li class="">
-<p>מצב Session: חלון ייעודי להרצת עומס עבודה רב-עבודות. זה מאפשר למשתמשים להתנסות עם אלגוריתמים וריאציוניים בדרך צפויה יותר, ואפילו להריץ מספר ניסויים בו-זמנית, תוך ניצול מקביליות ב-stack. השתמש ב-Sessions לעומסי עבודה איטרטיביים או ניסויים שדורשים גישה ייעודית. ראה הרצת עבודות ב-Session לדוגמאות.</p>
+<p>מצב session: חלון ייעודי להרצת עומס עבודה רב-עבודות. זה מאפשר למשתמשים להתנסות עם אלגוריתמים וריאציוניים בדרך צפויה יותר, ואפילו להריץ מספר ניסויים בו-זמנית, תוך ניצול מקביליות ב-stack. השתמש ב-Sessions לעומסי עבודה איטרטיביים או ניסויים שדורשים גישה ייעודית. ראה הרצת עבודות ב-Session לדוגמאות.</p>
 </li>
 </ul>
 <p>לניסוי QAOA, Session יהיה בחירה טובה להמשיך אתה אם יש לך גישה אליו, מכיוון שאנחנו צריכים לדגום את ה-Circuit שלנו פעמים רבות עם ערכי פרמטרים שונים כדי למצוא את האופטימום.</p>
