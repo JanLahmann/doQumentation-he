@@ -16,8 +16,8 @@
 <script src="/runtime-config.js"></script>
 <script src="/umami-before-send.js"></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org,de.doqumentation.org,es.doqumentation.org,uk.doqumentation.org,fr.doqumentation.org,it.doqumentation.org,pt.doqumentation.org,ja.doqumentation.org,tl.doqumentation.org,ar.doqumentation.org,he.doqumentation.org,ms.doqumentation.org,id.doqumentation.org,th.doqumentation.org,ko.doqumentation.org,pl.doqumentation.org,ro.doqumentation.org,cs.doqumentation.org" data-before-send="fwqUmamiBeforeSend"></script><link rel="stylesheet" href="/assets/css/styles.52182a45.css">
-<script src="/assets/js/runtime~main.7d0d2b27.js" defer="defer"></script>
-<script src="/assets/js/main.383c30ca.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.48415ebd.js" defer="defer"></script>
+<script src="/assets/js/main.543a4eff.js" defer="defer"></script>
 <meta data-dq-mirror-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -55,7 +55,7 @@
 <p><img decoding="async" loading="lazy" alt="דוגמה לשימוש ב-boxes וב-annotations של twirling" src="/assets/images/execution-model-3f6abccbb019cdb57baf809a7c1ce82a.avif" width="1024" height="338" class="img_ev3q"></p>
 <p>לאחר מכן ניתן להשתמש ב-Circuit עם boxes מסומנים כדי ליצור <em>template circuit</em> ו-<em>samplex</em>. ה-template circuit הפלט הוא Circuit פרמטרי שיורץ ללא שינוי נוסף (מלבד ערכי פרמטרים שונים המוקצים לו). ה-samplex, שהוא הסוג המרכזי של ספריית Samplomatic, מייצג התפלגות הסתברות פרמטרית על פרמטרי ה-template circuit ושדות נוספים בעלי ערך מערך. שדות אלה יכולים לשמש לעיבוד נתונים לאחר ביצוע ה-bound template circuit. במילים אחרות, ה-template circuit וה-samplex יחד אומרים ל-<a href="#executor" class="">Executor primitive</a> בדיוק אילו פרמטרים לייצר ואילו circuits קשורי-פרמטרים (bound) להריץ. מכיוון ששני מבנים אלה נוצרים בצד הלקוח, ניתן לבצע בדיקה ודגימה מקומיות לאימות הפלטים לפני שליחתם להרצה על חומרה.</p>
 <p>כדי לפשט את תהליך יצירת ה-boxes המסומנים, ספריית Samplomatic מספקת גם Transpiler passes שמקבצים אוטומטית הוראות Circuit ל-boxes מסומנים, בהתאם לאסטרטגיות שאתה מספק.</p>
-<p>למידע נוסף על Samplomatic, היכנס לתיעוד <a href="https://docs.quantum.ibm.com/addons/samplomatic/index" target="_blank" rel="noopener noreferrer" class="">המדריכים</a> ו<a href="https://docs.quantum.ibm.com/addons/samplomatic/" target="_blank" rel="noopener noreferrer" class="">הפניית ה-API</a>. אל תהסס לשלוח משוב ולדווח על באגים במאגר <a href="https://github.com/Qiskit/samplomatic" target="_blank" rel="noopener noreferrer" class="">GitHub</a> שלו.</p>
+<p>To learn more about Samplomatic, visit the <a class="" href="/addons/samplomatic">guides</a> and <a class="" href="/addons/samplomatic">API reference</a> documentation. Feel free to submit feedback and report bugs in its <a href="https://github.com/Qiskit/samplomatic" target="_blank" rel="noopener noreferrer" class="">GitHub</a> repository.</p>
 <span class="anchorTargetStickyNavbar_Vzrq" id="executor"></span>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="executor-primitive">ה-primitive של Executor<a href="#executor-primitive" class="hash-link" aria-label="קישור ישיר ל-ה-primitive של Executor" title="קישור ישיר ל-ה-primitive של Executor" translate="no">​</a></h3>
 <p>Executor הוא primitive חדש של IBM Quantum שמקבל את הזוג (template Circuit, samplex) כקלט, מייצר וקושר ערכי פרמטרים בהתאם ל-samplex, מריץ את ה-Circuits הקשורים על החומרה, ומחזיר את תוצאות ההרצה ומטא-נתונים. הוא פועל לפי הנחיות זוג הקלט ואינו מקבל שום החלטות משתמעות עבורך, כך שהתהליך שקוף אך גם יעיל.</p>
