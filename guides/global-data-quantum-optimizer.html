@@ -16,8 +16,8 @@
 <script src="/runtime-config.js"></script>
 <script src="/umami-before-send.js"></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org,de.doqumentation.org,es.doqumentation.org,uk.doqumentation.org,fr.doqumentation.org,it.doqumentation.org,pt.doqumentation.org,ja.doqumentation.org,tl.doqumentation.org,ar.doqumentation.org,he.doqumentation.org,ms.doqumentation.org,id.doqumentation.org,th.doqumentation.org,ko.doqumentation.org,pl.doqumentation.org,ro.doqumentation.org,cs.doqumentation.org" data-before-send="fwqUmamiBeforeSend"></script><link rel="stylesheet" href="/assets/css/styles.52182a45.css">
-<script src="/assets/js/runtime~main.48415ebd.js" defer="defer"></script>
-<script src="/assets/js/main.543a4eff.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a1f5bad0.js" defer="defer"></script>
+<script src="/assets/js/main.cbba06cf.js" defer="defer"></script>
 <meta data-dq-mirror-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -32,7 +32,7 @@
 <p>ה-Quantum Portfolio Optimizer הוא פונקציית Qiskit המתמודדת עם בעיית אופטימיזציה דינמית של תיק השקעות — בעיה סטנדרטית בתחום הפיננסים, שמטרתה לאזן מחדש השקעות תקופתיות בקבוצת נכסים כדי למקסם תשואות ולמזער סיכונים. הפונקציה מנצלת טכניקות אופטימיזציה קוונטיות מתקדמות ומפשטת את התהליך כך שמשתמשים, ללא ניסיון בחישוב קוונטי, יוכלו ליהנות מיתרונותיה במציאת מסלולי השקעה אופטימליים. הכלי מתאים במיוחד למנהלי תיקים, חוקרים בתחום הפיננסים הכמותיים ומשקיעים פרטיים, ומאפשר בחינה לאחור (back-testing) של אסטרטגיות מסחר באופטימיזציה של תיקי השקעות.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="function-description">תיאור הפונקציה<a href="#function-description" class="hash-link" aria-label="קישור ישיר ל-תיאור הפונקציה" title="קישור ישיר ל-תיאור הפונקציה" translate="no">​</a></h2>
 <p>פונקציית ה-Quantum Portfolio Optimizer משתמשת באלגוריתם VQE (Variational Quantum Eigensolver) לפתרון בעיית QUBO (Quadratic Unconstrained Binary Optimization), ובכך מטפלת בבעיות אופטימיזציה דינמית של תיקי השקעות. המשתמשים צריכים רק לספק את נתוני מחיר הנכסים ולהגדיר את אילוץ ההשקעה, ואז הפונקציה מריצה את תהליך האופטימיזציה הקוונטית ומחזירה קבוצה של מסלולי השקעה ממוטבים.</p>
-<p>The process consists of four main stages. First, the input data is mapped to a quantum-compatible problem, constructing the QUBO of the dynamic portfolio optimization problem, and transforming it into a quantum operator (Ising Hamiltonian). Next, the input problem and the VQE algorithm are adapted to be run in the quantum hardware. The VQE algorithm is then run on the quantum hardware, and finally, the results are post-processed to provide the optimal investment trajectories. The system also includes a noise-aware (<a class="" href="/addons/qiskit-addon-sqd">SQD</a>-based) post-processing to maximize the quality of the output.</p>
+<p>התהליך מורכב מארבעה שלבים עיקריים. ראשית, נתוני הקלט ממופים לבעיה תואמת-קוונטית, תוך בניית ה-QUBO של בעיית אופטימיזציה דינמית של תיק ההשקעות והמרתה לאופרטור קוונטי (Ising Hamiltonian). לאחר מכן, בעיית הקלט ואלגוריתם ה-VQE מותאמים להרצה על חומרה קוונטית. לאחר מכן מופעל אלגוריתם VQE על החומרה הקוונטית, ולבסוף, התוצאות עוברות עיבוד לאחור (post-processing) על מנת לספק את מסלולי ההשקעה האופטימליים. המערכת כוללת גם עיבוד לאחור מודע-רעש (מבוסס <a class="" href="/addons/qiskit-addon-sqd">SQD</a>) לשיפור איכות הפלט.</p>
 <p>פונקציית Qiskit זו מבוססת על <a href="https://arxiv.org/abs/2412.19150" target="_blank" rel="noopener noreferrer" class="">המאמר המדעי שפורסם</a> מאת Global Data Quantum.
 <img decoding="async" loading="lazy" alt="הדמיה של זרימת העבודה של הפונקציה" src="/assets/images/function_workflow-c87c42714c3fd188911c7aa56d50493c.svg" width="855" height="1290" class="img_ev3q"></p>
 <h1 id="get-started">התחלה</h1>
